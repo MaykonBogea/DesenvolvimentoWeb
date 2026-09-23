@@ -1,11 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Semana 2</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Titulo</h1>
+    </header>
+    <nav>
+        <a href="">link1</a>
+        <a href="">link2</a>
+        <a href="">link3</a>
+    </nav>
+    <div class="container">
+        <main>
+        <article>
+            <h2>Subtitulo</h2>
+            <p>Paragrafo longo de texto</p>
+            <img src="https://imgs.search.brave.com/bpR3rkzw_qY2y4ekY5X07rHr1hUXG-1cCFtsnahrxRQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb3Jl/bWlwc3VtLmltZ2l4/Lm5ldC81aVRRZDNK/Y0M1ZTA3MDN6Qk1u/eE43L2VmMWE1Njkw/YzQ4MTNlNzE3MzEx/NzFiZDc1YTQzZGQ2/L3BsYWNlaG9sZGVy/cy5kZXYtMTI4MHg3/MjAucG5nP3c9MTky/MCZxPTYwJmF1dG89/Zm9ybWF0LGNvbXBy/ZXNz" alt="uma imagem de placeholder">
+        </article>
+        <article>
+            <h2>Subtitulo</h2>
+            <p>Paragrafo longo de texto</p>
+            <img src="https://imgs.search.brave.com/bpR3rkzw_qY2y4ekY5X07rHr1hUXG-1cCFtsnahrxRQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb3Jl/bWlwc3VtLmltZ2l4/Lm5ldC81aVRRZDNK/Y0M1ZTA3MDN6Qk1u/eE43L2VmMWE1Njkw/YzQ4MTNlNzE3MzEx/NzFiZDc1YTQzZGQ2/L3BsYWNlaG9sZGVy/cy5kZXYtMTI4MHg3/MjAucG5nP3c9MTky/MCZxPTYwJmF1dG89/Zm9ybWF0LGNvbXBy/ZXNz" alt="uma imagem de placeholder">
+        </article>
+    </main>
+    <aside>
+        <form action="/" method="get">
+            <label for="nome">Nome</label>
+            <input type="text" placeholder="nome" minlength="3" id="nome">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="email" 
+            minlength="18" maxlength="120">
+
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" placeholder="idade" min="18" max="120">
+            
+            <label for="selecao">Sexo</label>
+            <select name="selecao" id="selecao">
+                <option value="homem">homem</option>
+                <option value="mulher">mulher</option>
+                <option value="other">Prefiro não responder</option>
+            </select>
+            <div>
+                <input type="checkbox" name="termos" id="termos">
+                <label for="termos">Eu Aceito Os Termos de Uso</label>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </aside>
+    </div>
+    <footer>
+        <h3>Feito por Maykon</h3>
+    </footer>
 </body>
 </html>
