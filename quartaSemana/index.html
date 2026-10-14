@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entregável Semana 04 - Arrays, DOM e Eventos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+      background-color: #f9f9fb;
+      color: #333;
+    }
+    section {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1 { color: #0066cc; }
+    .destaque {
+      background-color: #ffeb3b;
+      font-weight: bold;
+    }
+    .feito {
+      text-decoration: line-through;
+      color: #888;
+    }
+    ul {
+      cursor: pointer;
+    }
+    form {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    input, button {
+      padding: 8px;
+      font-size: 1rem;
+    }
+    button {
+      background: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- BLOCO 2: DOM -->
+  <section>
+    <h1 id="titulo">Blog Original</h1>
+    
+    <p class="texto">Este é o primeiro parágrafo do blog.</p>
+    <p class="texto">Este é o segundo parágrafo do blog.</p>
+
+    <h3>Lista de Tarefas</h3>
+    <ul id="lista">
+      <!-- 3 Itens iniciais para testar o Event Delegation -->
+      <li>Item Inicial 1</li>
+      <li>Item Inicial 2</li>
+      <li>Item Inicial 3</li>
+    </ul>
+  </section>
+
+  <!-- BLOCO 3: EVENTOS -->
+  <section>
+    <h3>Interações e Eventos</h3>
+    <button id="botao">Clique Aqui</button>
+    <br><br>
+    <label for="nome">Seu Nome: </label>
+    <input type="text" id="nome" placeholder="Digite algo..." />
+
+    <h3>Adicionar Nova Tarefa (Formulário)</h3>
+    <form id="formulario">
+      <input type="text" id="tarefa" placeholder="Digite uma nova tarefa..." />
+      <button type="submit">Adicionar</button>
+    </form>
+  </section>
+
+  <!-- Script Principal -->
+  <script src="app.js"></script>
+</body>
+</html>
